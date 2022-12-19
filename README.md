@@ -5,25 +5,24 @@ Exécution of sharphound from target machine in AD Infrastructure.
 
 Evidences output :
 
-    1.	Sysmon Logs (DC + target machine)
-    2.	Security Logs (DC + target machine)
-    3.	System Logs  (DC + target machine)
-    4.	Logs Directory Service (DC)
+    1. Sysmon Logs (DC + target machine)
+    2. Security Logs (DC + target machine)
+    3. System Logs  (DC + target machine)
+    4. Logs Directory Service (DC)
 
 (we might not need this, because we have our SIEM reporting the logs from all Domain endpoints)
 
 The configuration needed for LDAP auditing on the “DC” Server before the scenario deployment: 
-•	Open « Registry Editor » 
-•	Navigate to “HKEY_LOCAL_MACHINE -> SYSTEM -> CurrentControlSet -> Services -> NTDS -> Diagnostics”
-•	Add in the field '15 Field Engineering' the value '5'
-
+    • Open « Registry Editor » 
+    • Navigate to “HKEY_LOCAL_MACHINE -> SYSTEM -> CurrentControlSet -> Services -> NTDS -> Diagnostics”
+    • Add in the field '15 Field Engineering' the value '5'
 
 After analyzing the logs generated in our SIEM, we can implement some rules to detect the “sharphound” in our Domain. 
 
 Rules to implement :
 
 •	Server Side (DC) : 
-    Contain the Event id 5145
+    1.  Contain the Event id 5145
     2.	With same Account Name, src and ds tip under interval of 1 min
     3.	Account Name not contains $
     4.	Share name : \\*\IPC$
