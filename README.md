@@ -1,5 +1,12 @@
 # SharpHound-detection
 
+•	What is Sharphound :
+
+    • SharpHound is the official data collector for BloodHound. It is written in C# and uses native Windows API functions and LDAP namespace functions to collect data from domain controllers and domain-joined Windows systems.
+
+    ref : https://github.com/BloodHoundAD/SharpHound
+
+
 •	Scenario execution :
 
 Exécution of sharphound from target machine in AD Infrastructure.
