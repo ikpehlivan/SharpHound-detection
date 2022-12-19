@@ -4,10 +4,11 @@ Scenario execution:
 Exécution of sharphound from target machine in AD Infrastructure.
 
 Evidences output :
-1.	Sysmon Logs (DC + target machine)
-2.	Security Logs (DC + target machine)
-3.	System Logs  (DC + target machine)
-4.	Logs Directory Service (DC)
+
+    1.	Sysmon Logs (DC + target machine)
+    2.	Security Logs (DC + target machine)
+    3.	System Logs  (DC + target machine)
+    4.	Logs Directory Service (DC)
 
 (we might not need this, because we have our SIEM reporting the logs from all Domain endpoints)
 
@@ -22,7 +23,7 @@ After analyzing the logs generated in our SIEM, we can implement some rules to d
 Rules to implement :
 
 •	Server Side (DC) : 
-    1.	Contain the Event id 5145
+    Contain the Event id 5145
     2.	With same Account Name, src and ds tip under interval of 1 min
     3.	Account Name not contains $
     4.	Share name : \\*\IPC$
