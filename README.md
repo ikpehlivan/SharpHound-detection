@@ -22,10 +22,11 @@ After analyzing the logs generated in our SIEM, we can implement some rules to d
 Rules to implement :
 
 •	Server Side (DC) : 
-o	Contain the Event id 5145
-o	With same Account Name, src and ds tip under interval of 1 min
-o	Account Name not contains $
-o	Share name : \\*\IPC$
+1.	Contain the Event id 5145
+2.	With same Account Name, src and ds tip under interval of 1 min
+3.	Account Name not contains $
+4.	Share name : \\*\IPC$
+
 
 
 I have implemented the filters in QRadar and this is the result I got : 
