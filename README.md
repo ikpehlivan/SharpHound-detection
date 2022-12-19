@@ -40,8 +40,8 @@ I have implemented the filters in QRadar and this is the result I got :
  
 •	Client side (target machine) :
 
-    1.	Multiple connections to LDAP(S) and SMB  (ports 445, 389, 636)
-    2.	Multiple application name used “lsass” and “srvsvc”
+    1. Multiple connections to LDAP(S) and SMB  (ports 445, 389, 636)
+    2. Multiple application name used “lsass” and “srvsvc”
 
 
 I have implemented the filters in QRadar and this is the result I got : 
