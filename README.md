@@ -30,6 +30,7 @@ o	Share name : \\*\IPC$
 
 I have implemented the filters in QRadar and this is the result I got : 
 •	With Duration of 19 ms and 35 total results the filter has shown us the right result we want in the DC log sources.
+
 ![alt text](https://github.com/chnz2k/SharpHound-detection/blob/main/1.png?raw=true)
 
  
@@ -39,6 +40,7 @@ o	Multiple application name used “lsass” and “srvsvc”
 
 I have implemented the filters in QRadar and this is the result I got : 
 •	With Duration of 62 ms and 129 total results the filter has shown us the right result we want in the target log sources.
+
 ![alt text](https://github.com/chnz2k/SharpHound-detection/blob/main/2.png?raw=true)
  
 
