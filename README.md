@@ -22,10 +22,10 @@ After analyzing the logs generated in our SIEM, we can implement some rules to d
 Rules to implement :
 
 •	Server Side (DC) : 
-1.	Contain the Event id 5145
-2.	With same Account Name, src and ds tip under interval of 1 min
-3.	Account Name not contains $
-4.	Share name : \\*\IPC$
+    1.	Contain the Event id 5145
+    2.	With same Account Name, src and ds tip under interval of 1 min
+    3.	Account Name not contains $
+    4.	Share name : \\*\IPC$
 
 
 
@@ -36,8 +36,8 @@ I have implemented the filters in QRadar and this is the result I got :
 
  
 •	Client side (target machine) :
-o	Multiple connections to LDAP(S) and SMB  (ports 445, 389, 636)
-o	Multiple application name used “lsass” and “srvsvc”
+    1.	Multiple connections to LDAP(S) and SMB  (ports 445, 389, 636)
+    2.	Multiple application name used “lsass” and “srvsvc”
 
 I have implemented the filters in QRadar and this is the result I got : 
 •	With Duration of 62 ms and 129 total results the filter has shown us the right result we want in the target log sources.
