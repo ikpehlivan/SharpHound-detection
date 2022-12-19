@@ -23,10 +23,10 @@ Rules to implement :
 
 •	Server Side (DC) : 
     
-    1.  Contain the Event id 5145
-    2.	With same Account Name, src and ds tip under interval of 1 min
-    3.	Account Name not contains $
-    4.	Share name : \\*\IPC$
+    1. Contain the Event id 5145
+    2. With same Account Name, src and ds tip under interval of 1 min
+    3. Account Name not contains $
+    4. Share name : \\*\IPC$
 
 
 
